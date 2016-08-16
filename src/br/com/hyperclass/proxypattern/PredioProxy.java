@@ -7,7 +7,7 @@ public class PredioProxy implements Acoes {
 	public String acessar(final Pessoa pessoa) {
 		String mensagem = "Acesso negado";
 		
-		if(pessoa.getEstatusPessoa() == EstatusPessoa.CADASTRADA){
+		if(pessoa.getEstatusPessoa() == StatusPessoa.CADASTRADA){
 			Acoes acoes = new Predio();
 			mensagem = acoes.acessar(pessoa);
 		}	
